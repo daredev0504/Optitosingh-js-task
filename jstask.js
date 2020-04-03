@@ -6,7 +6,7 @@
         { principal: 2000, time: 3 }
       ];
       function interestCalculator(data) {
-        for (const i of data) {
+        for (let i of data) {
           if (i.principal >= 2500 && i.time > 1 && i.time < 3) {
             i.rate = 3;
           } else if (i.principal >= 2500 && i.time >= 3) {
